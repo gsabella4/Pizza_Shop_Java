@@ -39,7 +39,9 @@ public class PizzaOrder {
         // 10% discount works now for specialty pizzas by implementing the Arrays.equals below... however case & order matter. needs tweaking.
         // ALSO does not allow for differentiation between delivery or pickup. the 10% discount would be better implemented in the command line app, asking customer if delivery
         // if it is delivery && their order contains a specialty pizza - they get the discount.
-        if (Arrays.equals(this.order.getToppings(), Ram) && this.order.getToppings().length == 3 || Arrays.equals(this.order.getToppings(), Nerd) && this.order.getToppings().length == 4 || Arrays.equals(this.order.getToppings(), Oracle) && this.order.getToppings().length == 8) {
+        if (Arrays.equals(this.order.getToppings(), Ram) && this.order.getToppings().length == 3
+                || Arrays.equals(this.order.getToppings(), Nerd) && this.order.getToppings().length == 4
+                || Arrays.equals(this.order.getToppings(), Oracle) && this.order.getToppings().length == 8) {
             totalPrice *= discount;
         }
         System.out.println("The total price for your order is $" + totalPrice);
