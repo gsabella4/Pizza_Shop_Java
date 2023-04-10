@@ -6,7 +6,7 @@ public class Application {
 
         Pizza pizza1 = new Pizza("plain", "small", new String[]{"Roasted Red Peppers", "Tomatoes", "Mushrooms"});
         Pizza pizza2 = new Pizza("whole wheat", "medium", new String[]{"pepperoni", "onion", "green pepper", "ham", "anchovies"});
-        Pizza pizza3 = new Pizza("parmesan", "small", new String[]{});
+        Pizza pizza3 = new Pizza("parmesan", "medium", new String[]{"pepperoni", "Roasted Red Peppers", "chicken"});
         Pizza pizza4 = new Pizza();
 
 
